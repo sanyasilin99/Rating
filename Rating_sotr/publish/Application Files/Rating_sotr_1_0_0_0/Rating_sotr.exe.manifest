@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Rating_sotr.exe" version="1.0.0.0" publicKeyToken="3533286a5fdce767" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Rating_sotr" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Rating_sotr.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          При необходимости изменить уровень контроля учетных записей Windows замените узел 
+          requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Если вы хотите использовать виртуализацию файлов и реестра для обратной 
+         совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BCrypt.Net.dll" size="14336">
+      <assemblyIdentity name="BCrypt.Net" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vzMO/HDauW1hRNCVfupNs9kQeetCvVEwtfpDKz2NvSk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dapper.dll" size="173056">
+      <assemblyIdentity name="Dapper" version="1.50.5.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RPMA2cNRJCB71fKQ63RiGQdRUpTBLFYD4qjOqAOnk0g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaterialSkin.dll" size="589824">
+      <assemblyIdentity name="MaterialSkin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SXbed8MkGmQfanDm6T2ETMidwxRs8UgP1cmCVlFuzwU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Rating_sotr.exe" size="352760">
+      <assemblyIdentity name="Rating_sotr" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jcWCu3oc//ZdzWe8giG7zMhZfE97UyqEnMDd9HXoC2Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Rating_sotr.exe.config" size="951">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>G+dENusCerjEI5LBXNoQ1hErXMlzzaKa7nmlnJM/Woo=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-EPNEITS\Александр" issuerKeyHash="8275a30862e80a6b379a296f5d4caa4a7cff106b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>RXzf7TxZJp2vlIzYGJXDL74nwjpDh3iQ8cs8nJxAsME=</DigestValue></Reference></SignedInfo><SignatureValue>j4rp/xw6WPjnZvcQ1L8B979r0ttBnQxit1wA7xSSF40NmOKCUbhoD8/MZWr+iPbXyXV4dazhUn82+rbR2VPiMswWNr1v3bf/jsiNM1E/fP20+0HIPvPev6LOMtvRjgK2f1mMktiaMRCt+sPefHk5yCKhm6goQQs/yd+/af9UdWw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>mNvvwsBvYZZRwbpFDAE0POyBe14EjjBh8SxpWMYK7rAwNTZSXt1mbRhd/BxQKpnWraEq+6T5A/zMhCE8km5LCUZ74g2/Lo6xIJ+xnpR1MxKrGgdgSiuyaA21c8fKxCgd1/nACoGfKBQNQFS3mAsd0NkUtp+qj5tLMnMdOwFaJe0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c1b0409c9c3ccbf1907887433ac227be2fc39518d88c94af9d26593ceddf7c45" Description="" Url=""><as:assemblyIdentity name="Rating_sotr.exe" version="1.0.0.0" publicKeyToken="3533286a5fdce767" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-EPNEITS\Александр</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ZRN2jdIF1fPHgbCqhNBO/1LI/87IjDG41HL+Hci4Mcc=</DigestValue></Reference></SignedInfo><SignatureValue>B2t49Fhfy7A8Q2cKHqxWiabpashAz5JaivZEoNUQEMsIiB5fL8UoVNvAsvrd0zEU+FMTQtBch0isuk/F1la6P6kiQ6QZiMrzJpzRF17Or417iRM2q3U7m2/mIyaQMNyr6o8TpvkzRHqQb7GD74/g+AQGkYQNi9tAkERpizmQg5A=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>mNvvwsBvYZZRwbpFDAE0POyBe14EjjBh8SxpWMYK7rAwNTZSXt1mbRhd/BxQKpnWraEq+6T5A/zMhCE8km5LCUZ74g2/Lo6xIJ+xnpR1MxKrGgdgSiuyaA21c8fKxCgd1/nACoGfKBQNQFS3mAsd0NkUtp+qj5tLMnMdOwFaJe0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQEP8KcSuu2b9GEhXE5ns/pjANBgkqhkiG9w0BAQsFADA9MTswOQYDVQQDHjIARABFAFMASwBUAE8AUAAtAEUAUABOAEUASQBUAFMAXAQQBDsENQQ6BEEEMAQ9BDQEQDAeFw0xODExMjcwOTI1MzBaFw0xOTExMjcxNTI1MzBaMD0xOzA5BgNVBAMeMgBEAEUAUwBLAFQATwBQAC0ARQBQAE4ARQBJAFQAUwBcBBAEOwQ1BDoEQQQwBD0ENARAMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCY2+/CwG9hllHBukUMATQ87IF7XgSOMGHxLGlYxgrusDA1NlJe3WZtGF38HFAqmdatoSr7pPkD/MyEITySbksJRnviDb8ujrEgn7GelHUzEqsaB2BKK7JoDbVzx8rEKB3X+cAKgZ8oFA1AVLeYCx3Q2RS2n6qPm0sycx07AVol7QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAJHTqqHgyhnhZdCnQcSNv3TwqL2uVVCDEKpmSnvYSaHtE7u9IteiHxAl4elDBDvspiJxUt/Dnn+R3PMzTDha7GisuF1aBhPzPU4Qrp1CIySmuUhMBUZd8kKEYqjH7SBSOYfdbNME7J1+QHsb8qi45oBG6Mw+BL2c4SCA5c2oKwVl</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
